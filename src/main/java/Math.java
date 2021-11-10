@@ -1,4 +1,4 @@
-import java.text.NumberFormat;
+
 import java.util.Scanner;
 
 public class Math {
@@ -47,10 +47,12 @@ public class Math {
                 else if (line[1].equals("-")) subtraction(two, three);
                 else if (line[1].equals("*")) multiply(two, three);
                 else if (line[1].equals("/")) division(two, three);
-                else System.out.println("Введен недопустимый оператор");
+                else System.out.println("Введен недопустимый оператор: "+ line[1] );
 
             } catch (NumberFormatException e) {
-                System.out.println("Некорректро введено выражение");
+                System.out.println("Некорректро введено выражение: " + input);
+            } catch (ArrayIndexOutOfBoundsException e) {
+                System.out.println("Ввод должен состоять из цифр и действия");
             }
             System.out.println("Возможные действия ( + , - , / , * )");
             System.out.println("Пример ввода: 10 + 10");
