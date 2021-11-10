@@ -18,7 +18,7 @@ public class Math {
     }
     public Object subtraction(Object two, Object tree) {
         int i = (Integer)two - (Integer)tree;
-        System.out.println("Вычитаем "+ two + " из " + tree + ". Получаем результат: " + i);
+        System.out.println("Вычитаем "+ tree + " из " + two + ". Получаем результат: " + i);
         return i;
     }
 }
