@@ -23,6 +23,7 @@ public class Math {
         System.out.println("Вычитаем "+ tree + " из " + two + ". Получаем результат: " + i);
         return i;
     }
+
     public void start(){
         Scanner scanner = new Scanner(System.in);
         String input;
