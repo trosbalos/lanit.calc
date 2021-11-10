@@ -65,7 +65,7 @@ public class TestDataProvider {
     }
 
     @DataProvider
-    public Object[][] testObjectData() {
+    public static Object[][] testObjectData() {
         return new Object[][]{
                 {"five", 20, 20},
                 {10, -10, "one"},
